@@ -1,0 +1,50 @@
+<DOCTYPE html>
+<html>
+<head>
+
+<style>
+#custom-button {
+    padding: 10px;
+    color: white;
+    background-color: #009575;
+    border: 1 px solid #000;
+    border: radius 5px;
+    cursor:pointer;
+}
+#real-file{
+    background-color: #00b28f;
+}
+#costom-text{
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #000;
+}
+
+
+</style>
+
+</head>
+<body>
+<h1>UPLOADED FILE TEXT</h1>
+<input type="file"id="real-file"/>
+<span id="custom-text"></span><br><br>
+
+<button onclick="Alert();">UPLOAD</button>
+
+
+
+<script>
+
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customText = document.getElementById("customText");
+function Alert() {
+    alert ("YOUR FILE HAS BEEN UPLOADED SUCCESSFULLY");
+}
+</script>
+</body>
+
+
+
+
+</html>
